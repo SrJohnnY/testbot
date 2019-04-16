@@ -9,11 +9,6 @@ client.aliases = new Discord.Collection();
 
 client.on('ready', () => {
   console.log(`Conectado com sucesso ${client.user.tag}!`);
-  setInterval(() => {
-    let a = ["💬 Fui desenvolvido por: !</JohnnY>!#8139", "y.ajuda | (v1.7.6)", "Estou em uma versão beta!"];
-    let b = a[Math.floor(Math.random() * a.length)];
-    client.user.setActivity(b, {type: 'STREAMING', url: 'https://www.twitch.tv/johnn123__'} );
-    }, 9000);
 });
 
 client.commands = new Enmap();
