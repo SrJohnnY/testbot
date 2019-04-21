@@ -3,7 +3,7 @@ const moment = require("moment"); // npm install moment
 moment.locale('pt-BR'); // Setar a linguagem do moment
 exports.run = async (client, message, args) => {
 let e = new RichEmbed()
-    .setColor([204, 0, 204])
+    .setColor("RANDOM")
     .setTitle(`Informação sobre o servidor.`, client.user.displayAvatarURL)
     .addField(`Dono`, `<@${message.guild.ownerID}>`)
     .addField(`Nome do servidor`, `${message.guild.name}`)
