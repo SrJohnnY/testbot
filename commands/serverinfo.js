@@ -8,7 +8,7 @@ let e = new RichEmbed()
     .addField(`Dono`, `<@${message.guild.ownerID}>`)
     .addField(`Nome do servidor`, `${message.guild.name}`)
     .addField(`ID Do servidor`, `${message.guild.id}`)
-    .addField(`Criado e*`, `${moment(message.guild.createdAt).format('LLLLL')}`)
+    .addField(`Criado em`, `${moment(message.guild.createdAt).format('LLLLL')}`)
     .addField("Total | Humanos | Bots", `${message.guild.members.size} | ${message.guild.members.filter(member => !member.user.bot).size} | ${message.guild.members.filter(member => member.user.bot).size}`)
     .addField(`Região do servidor`, `${message.guild.region}`);
     message.channel.send(e);
