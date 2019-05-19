@@ -1,8 +1,8 @@
-const Discord = require('discord.js');
+const Discord = require('discord.js'); // npm install discord.js
 const client = new Discord.Client();
-const config = require('./config.json')
-const Enmap = require('enmap')
-var fs = require('fs');
+const config = require('./config.json') 
+const Enmap = require('enmap') // npm install enmap
+var fs = require('fs'); // npm install fs
 
 client.commands = new Discord.Collection();//se você definiu "client", troque "bot" por client!
 client.aliases = new Discord.Collection();
